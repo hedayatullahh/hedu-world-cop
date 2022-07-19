@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/* <!-------------------
+-- top bennar --
+--------------------> */
+.bennar-imege-text{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    margin: 50px 140px;
+    padding: 0px;
+    align-items: center;
+    border-radius:30px;
+}
+.bennar-imege img{
+    width: 581px;
+    height: 613px;
+    margin: 33px 33px 0px 17px;
+}
+.bennar-text{
+    margin-left: 110px;
+}
+.bennar-text h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+}
+.bennar-text p{
+    color: white;
+    font-size: 20px;
+}
+.bennar-text button{
+    background-color: #DD0000;
+    border-radius: 5px;
+    display: flex;
+   text-align: center;
+    margin-top: 20px;
+    padding: 16px 25px;
+}
+.bennar-text button a{
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+/* <!------------------
+        -- kheloar news --
+    --------------------> */
+.kheloar-button{
+    background-color: #161616;
+    border-radius: 10px;
+    width: 312px;
+    height: 312px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.kheloar-button a{
+    width: 252px;
+    height: 64px;
+    text-align: center;
+    background-color: white;
+    border: 1px black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 1000;
+    color: #161616;
+    display: block;
+    margin:10px 25px 0 25px;
+    padding-top: 25px;
+    
+}
+#red{
+    background-color: #DD0000;
+}
+#red a{
+    color: white;
+}
+/* newss */
+.kheloar-news{
+    display: flex;
+    gap: 24px;
+    margin: 100px 140px;
+}
+.newss{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+.news{
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 1px 1px lightgray;
+}
+.news img{
+    width: 345px;
+    height: 175px;
+}
+.news-info button{
+   width: 100px;
+   height: 32px;
+  margin: 10px 0 15px 10px;
+   border-radius: 5px;
+}
+.news-info h4{
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+}
+.clock-chat{
+    display: flex;
+    gap: 20px;
+   margin: 15px 0 15px 10px;
+   font-size: 20px;
+}
+.clock{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.chat{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* some css in socond index */
+.newses{
+    box-shadow: 1px 1px lightgray;
+    border-radius: 10px;
+}
+.news-imeges img{
+   width: 93px;
+   height: 56px;
+   padding: 50px 30px 0 30px;
+}
+.news-imeges span{
+   justify-content: center;
+}
+.newses-info h4{
+    margin: 20px 0px 10px 35px;
+    font-size: 23px;
+    font-weight: 700;
+}
+.newses-info p{
+    margin: 20px 0px 0px 30px;
+}
+/*----------------------
+       --footer--
+ ----------------------- */
+ footer{
+    background-color: black;
+    padding: 130px 315px;
+ }
+footer h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 70px;
+}
+footer hr{
+    color: greenyellow;
+    margin-bottom: 70px;
+    
+}
+footer ul{
+    color: #B9B9B9;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+   justify-content: center;
+}
