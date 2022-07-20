@@ -54,7 +54,19 @@ a{
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
+  transition: all 0.5s ease-out;
 }
+.bennar-text button:hover,
+.bennar-text button:focus
+{
+ background-color: white;
+}
+.bennar-text button a:hover,
+.bennar-text button a:focus
+{
+    color: #DD0000;
+}
+
 /* <!------------------
         -- kheloar news --
     --------------------> */
@@ -104,7 +116,7 @@ a{
 .news{
    background-color: white;
    border-radius: 10px;
-   box-shadow: 1px 1px lightgray;
+   box-shadow: 1px 4px lightgray;
 }
 .news img{
     width: 100%;
@@ -134,6 +146,9 @@ a{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.view-button{
+    display: none;
 }
 /* some css in socond index */
 .newses{
@@ -180,38 +195,58 @@ footer ul{
     list-style: none;
    justify-content: center;
 }
+.social-link{
+    font-size: 30px;
+   text-align: center;
+   padding-top: 30px;
+}
+.social-link a{
+  color:white ;
+  padding:30px;
+ 
+}
 
 /*--------------------------------------
-------------- media query---------------
+------ media query mobile version--------
 ---------------------------------------- */
 @media screen and (max-width:767px){
 body{
    margin: 0;
     }
 .bennar-imege-text{
-   margin: 20px;
+    margin: 20px;
     grid-template-columns:  1fr;
     align-items: center;
     padding-bottom: 5px;
+    
 }
 .bennar-imege img {
     width: 80%;
     height: 80%;
     margin: 0;
     padding-left: 50px;
+    padding-top: 15px;
 }
 .bennar-text{
     margin:28px 38px 0 38px;
     text-align: center;
 }
 .bennar-text h1{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
+    
 }
 .bennar-text p{
     color: white;
     font-size: 14px;
     font-weight: 400;
+}
+.benner-pragraph{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
 .bennar-text button{
    width: 161px;
@@ -221,11 +256,26 @@ body{
 }
 .bennar-text button a {
     font-size: 20px;
+    transition: all 0.5s ease-out;
+}
+.bennar-text button:hover,
+.bennar-text button:focus
+{
+ background-color: white;
+}
+.bennar-text button a:hover,
+.bennar-text button a:focus
+{
+    color: #DD0000;
 }
 .kheloar-button{
     background-color: white;
     justify-content: center;
     padding-left: 30%;
+    
+}
+.kheloar-button a{
+    box-shadow: 2px 2px 2px 0px lightgrey;
 }
 .newss{
    display: grid;
@@ -236,6 +286,9 @@ body{
 .news-info{
     margin: 0;
 } 
+.view-button{
+    display: none;
+}
 .kheloar-news{
     display: block;
    align-items: center;
@@ -251,8 +304,98 @@ footer ul li{
 footer{
     padding: 0;
     margin: 0;
+    padding-bottom: 10px;
 }
 footer h1{
-    margin: 0px 0 30px 0;
+    margin: 0px 0px 30px 0;
+    padding-top: 10px;
+}
+.social-link{
+    font-size: 30px;
+   text-align: center;
+   padding-top: 0px;
+   padding-bottom: 10px;
+}
+.social-link a{
+  color:white ;
+  padding-left:10px; 
+}
+
+}
+/*-------------------------------------
+----- media query tablet version-------
+--------------------------------------- */
+@media screen and (min-width:768px) and (max-width:1023px){
+.bennar-imege-text{
+    margin: 50px 50px 0 50px;
+    padding: 0;
+    align-items:unset;
+}  
+.bennar-text{
+    margin-left: 50px;
+}  
+.bennar-text h1{
+    font-size: 40px;
+}   
+.bennar-text p {
+    font-size: 14px;
+}
+
+.bennar-imege img{
+    width: 323px;
+    height: 340px;
+}
+.kheloar-news{
+    display: block;
+    padding-top: 50px;
+}
+.kheloar-button{
+    flex-direction: row;
+    background-color: unset;
+    width: auto;
+    height: auto;
+}
+.kheloar-button a{
+    box-shadow: 2px 2px 2px 0px lightgrey;
+}
+.newss{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.kheloar-news{
+    margin: 0 50px;
+}
+.close{
+    display: none;
+}
+.view-button{
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+}
+.view-button button{
+    font-size: 25px;
+    background-color: #DD0000;
+    color:white;
+    padding: 12px 29px 12px 29px;
+    margin: 20px 0 ;
+}
+footer{
+    padding: 0 97px 55px 97px;
+}
+footer ul{
+    display: flex;
+    gap: 24px;   
+}
+footer h1{
+    padding-top: 30px;
+}
+.social-link{
+    font-size: 50px;
+   text-align: center;
+}
+.social-link a{
+  color:white ;
+  padding-left: 30px;
 }
 }
